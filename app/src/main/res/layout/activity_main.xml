@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ProgressBar
+        android:id="@+id/push_progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:visibility="gone"
+        android:max="100"
+        android:progress="25" />
+    <TextView
+        android:id="@+id/text"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+    <Button
+        android:id="@+id/btn_compute"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="多线程计算，点击空白处取消"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btn_task"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="异步任务计算，点击空白处取消"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btn_handler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Handler 下载图片"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btn_asynctask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AsyncTask 下载图片"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/btn_else"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="其它异步方式"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/picture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
